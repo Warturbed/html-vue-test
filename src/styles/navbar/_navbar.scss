@@ -1,0 +1,24 @@
+.navbar {
+	position: fixed;
+	height: 70px;
+	width: 370px;
+	padding: 0 20px;
+	background-color: var(--background-white);
+	display: flex;
+	align-items: center;
+	border-bottom: 3px solid var(--background-grey);
+	span {
+		display: flex;
+		font-size: 20px;
+		font-weight: 500;
+		margin: 0 auto;
+	}
+	&__btn {
+		position: absolute;
+		width: 30px;
+		height: 30px;
+		background: url('./img/back.png');
+		background-size: cover;
+		cursor: pointer;
+	}
+}

@@ -1,0 +1,23 @@
+.folder-item {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	cursor: pointer;
+	border-radius: var(--border-radius);
+	&:hover {
+		background-color: var(--background-grey);
+	}
+	&__icon {
+		width: 90px;
+		height: 80px;
+		background: url('./img/folder.png');
+		background-size: cover;
+		background-position: center;
+		background-repeat: no-repeat;
+	}
+	&__name {
+		font-size: 12px;
+		overflow: hidden;
+	}
+}
