@@ -11,7 +11,11 @@
         </div>
         <div class="file">
           <ul class="file__list storage__file-list">
-            <FileView :files_data="DATA.files"/>
+            <FileView
+            v-for="file, index in DATA.files"
+            :key="index"
+            :file_data="file"
+            />
           </ul>
         </div>
     </main>
@@ -41,7 +45,7 @@ export default {
     ]),
     // К предыдущей папке
     toPreviosFolder() {
-        this.CHANGE_PAST_DATA()
+      this.CHANGE_PAST_DATA()
     }
   },
   // Получение списка перед загрузкой страницы
